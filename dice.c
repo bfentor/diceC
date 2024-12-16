@@ -81,15 +81,15 @@ int main(int argc, char **argv) {
     strcpy(dice[5][3], "| O   O |");
     strcpy(dice[5][4], "+-------+");
 
-        //calculate number of dice per line and number of lines
-        int dicePerLine = getNumDice();
-        do
-        {
-            if (num < dicePerLine)
-                dicePerLine = num;
-            int randList [dicePerLine];
-            draw(dicePerLine, dice, mkList(randList, dicePerLine));
-            num -= dicePerLine;
-            printf("\n");
-        } while (num > 0);
-    }
+    //calculate number of dice per line and number of lines
+    int dicePerLine = getNumDice();
+    do
+    {
+        if (num < dicePerLine)
+            dicePerLine = num;
+        int randList [dicePerLine];
+        draw(dicePerLine, dice, mkList(randList, dicePerLine));
+        num -= dicePerLine;
+        printf("\n");
+    } while (num > 0);
+}
