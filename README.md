@@ -13,3 +13,6 @@ Dice now wrap to the next line if a high number is given, but measuring the term
 
 ## Example
 <img src="example.jpg" width="300" />
+
+### Without argument
+<img src="example2.jpg" width="300" />
